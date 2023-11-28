@@ -1,0 +1,367 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.burger{
+    display: none;
+}
+
+.container{
+    max-width: 963.61px;
+    margin: 0px auto;
+}
+
+h2{
+    font-size: 34px;
+    line-height: 42.09px;
+    color: #070707;
+    font-weight: bold;
+}
+
+header{
+    padding-top: 34px;
+    padding-bottom: 104px;
+}
+
+.navigation{
+    width: 100%;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #828282;
+    margin-bottom: 40px;
+}
+
+.navigation-switch, .close-icon-nav{
+    display: none;
+}
+
+.navigation-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22.28px;
+    color: #828282;
+    text-decoration: none;
+}
+
+.header-text-area{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-end;
+    margin-bottom: 50px;
+}
+
+h1{
+  color: #070707;
+  font-size: 48px;
+  line-height: 58.61px;
+  font-weight: bold;  
+}
+
+.header-text{
+  color: #070707;
+  font-size: 18px;
+  line-height: 21.83px;
+  font-weight: 500;  
+}
+
+.header-switch{
+  color: #070707;
+  font-size: 16px;
+  line-height: 19.81px;
+  font-weight: bold;
+}
+
+.header-switch .disable{
+    color: #828282;
+}
+
+header img{
+    width: 100%;
+}
+
+.aboutMe{
+    width: 100%;
+    height: 506px;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutMe h2{
+    margin-bottom: 18px;
+}
+.aboutMe p{
+    margin-bottom: 20px;
+}
+
+.skills{
+    padding-top: 95px;
+    padding-bottom: 110px;
+}
+
+.skills-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills-content h2{
+    margin-bottom: 69px;
+}
+
+.skills-content p{
+  color: #070707;
+  font-size: 18px;
+  line-height: 21.83px;
+  font-weight: 500;
+  margin-bottom: 83.49px; 
+}
+
+.skills-card-area{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.skills-card{
+    width: 166.46px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-icon{
+    max-width: 89px;
+    margin-bottom: 23px;
+}
+
+.skills-card p{
+  color: #828282;
+  font-size: 14px;
+  line-height: 17.33px;
+  font-weight: bold;
+  margin-bottom: 41.41px; 
+  text-align: center;
+}
+.star-area{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.disable *{
+    fill: #E5E5E5;
+}
+
+
+.portfolio{
+    width: 100%;
+    background-color: #F6F6F6;
+    text-align: center;
+    padding-top: 113px;
+    padding-bottom: 93px;
+}
+
+.portfolio h2{
+    margin-bottom: 42px;
+}
+
+.portfolio-item{
+    margin-bottom: 99px;
+}
+
+.portfolio-item:last-child{
+    margin-bottom: 0px;
+}
+
+.portfolio-item img{
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+
+.contacts{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 114px;
+    padding-bottom: 123px;
+}
+
+.contacts h2{
+    margin-bottom: 20px;
+}
+
+.contacts-main-text{
+    text-align: center;
+    margin-bottom: 30px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.83px;
+}
+
+button{
+    width: 180.5px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+    border-radius: 40px;
+
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21.83px;
+}
+
+.contacts button{
+    margin-bottom: 85.78px;
+}
+
+.contacts-icon-area{
+    width: 342.18px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.contacts-icon-text{
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.98px;
+    color: #828282;
+}
+
+@media (max-width:900px){
+    .container{
+        max-width: 700px;
+    }
+    .skills-card-area{
+        flex-wrap: wrap;
+    }
+    .skills-card{
+        width: calc(50% - 50px);
+        margin-right: 50px;
+        margin-bottom: 30px;
+    }
+    .skills-card:nth-child(even){
+        margin-right: 0px;
+    }
+}
+
+@media (max-width:425px)
+{
+    .container{
+        max-width: 316px;
+    }
+    .navigation{
+        
+        width: 0%;
+        /*Скрвает весь конетнт который не помещается*/
+        overflow: hidden;
+        padding: 0px;
+
+        position: absolute;
+        top:0px;
+        left:0px;
+        background-color: white;
+        z-index: 999;
+        /*padding: 66px 28px 57px 26px;*/
+    }
+    
+    .navigation.open{
+        width: 100%;
+        padding: 66px 28px 57px 26px;
+    }
+
+    .navigation-content{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        display: flex;
+        position: relative;
+    }
+
+    .close-icon-nav{
+        display: block;
+        position: absolute;
+        top:5px;
+        right:0px;
+    }
+
+    a{
+        font-size: 34px;
+        line-height: 42px;
+        font-weight: bold;
+        margin-bottom: 68px;
+    } 
+    .navigation-switch{
+        display: block;
+        font-size: 34px;
+        line-height: 42px;
+        font-weight: bold;
+        align-self: flex-end;
+    }   
+
+    header{
+        padding-top: 65px;
+        padding-bottom: 80px;
+    }
+    .header-text-area{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 37px;
+        position: relative;
+    }
+    .header-text{
+        margin-top: 23px;
+    }
+    .header-switch{
+        display: none;
+    }
+
+    .aboutMe{
+        height: 450px;
+    }
+    .skills{
+        padding-bottom: 80px;
+        padding-top: 60px;
+    }
+    .skills-card-area{
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills-card{
+        max-width: 166px;
+        margin-right: 0px;
+    }
+    .contacts-icon-area{
+        width: 320px;
+    }
+
+    .burger{
+        display: block;
+        position: absolute;
+        right:0px;
+        top:0px;
+    }
+
+}
+
+
